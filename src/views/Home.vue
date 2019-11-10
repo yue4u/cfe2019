@@ -1,16 +1,18 @@
 <template>
   <div class="home">
-    <h1>ケサリの旅</h1>
     <cfe-game />
+    <cfe-background />
   </div>
 </template>
 
 <script>
 import CfeGame from "@/components/Game";
+import CfeBackground from "@/components/Background";
 export default {
   name: "home",
   components: {
-    CfeGame
+    CfeGame,
+    CfeBackground
   }
 };
 </script>

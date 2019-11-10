@@ -39,17 +39,17 @@ export default Vue.extend({
     }
   },
   mounted() {
-    this.game = new PIXI.Application({
-      width: window.innerWidth,
-      height: window.innerHeight,
-      antialias: true,
-      transparent: true
-    });
-    if (this.$refs.container instanceof Element) {
-      this.$refs.container.append(this.game.view);
-    }
-    this.game.ticker.add(delta => this.move(delta));
-    setInterval(() => this.addText(), 200);
+    // this.game = new PIXI.Application({
+    //   width: window.innerWidth,
+    //   height: window.innerHeight,
+    //   antialias: true,
+    //   transparent: true
+    // });
+    // if (this.$refs.container instanceof Element) {
+    //   this.$refs.container.append(this.game.view);
+    // }
+    // this.game.ticker.add(delta => this.move(delta));
+    // setInterval(() => this.addText(), 200);
   }
 });
 </script> 

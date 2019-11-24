@@ -1,35 +1,22 @@
 # cfe2019
 
-## Project setup
+> My legendary Nuxt.js project
 
-```
-yarn install
-```
+## Build Setup
 
-### Compiles and hot-reloads for development
+``` bash
+# install dependencies
+$ yarn install
 
-```
-yarn dev
-```
+# serve with hot reload at localhost:3000
+$ yarn dev
 
-### Compiles and minifies for production
+# build for production and launch server
+$ yarn build
+$ yarn start
 
-```
-yarn build
-```
-
-### Run your unit tests
-
-```
-yarn test:unit
+# generate static project
+$ yarn generate
 ```
 
-### Lints and fixes files
-
-```
-yarn lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

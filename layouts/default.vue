@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import CfeBackground from '../components/Background'
+import CfeBackground from '@/components/background'
 export default {
   name: 'home',
   components: {
@@ -16,9 +16,16 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: 'kks';
+  src: url('../assets/UDDigiKyokashoN-B.woff') format('woff');
+}
+
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --tree: #89311f;
+  --bg: #fde4be;
+  font-family: 'kks', sans-serif;
+  color: var(--tree);
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -33,6 +40,9 @@ body {
   margin: 0;
 }
 
+a {
+  color: inherit;
+}
 *,
 *:before,
 *:after {

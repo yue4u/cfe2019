@@ -1,5 +1,12 @@
 export default {
   mode: 'spa',
+  css: [
+    {
+      src: './assets/scss/main.scss',
+      lang: 'scss'
+    }
+  ],
+
   /*
    ** Headers of the page
    */
@@ -46,6 +53,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 }

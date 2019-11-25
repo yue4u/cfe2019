@@ -1,9 +1,9 @@
 <template>
   <div class="bg">
     <div
-      class="bg-row"
       v-for="row in Array(10).keys()"
       :key="`bg-row-${row}`"
+      class="bg-row"
     />
   </div>
 </template>

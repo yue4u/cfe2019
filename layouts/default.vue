@@ -8,7 +8,7 @@
 <script>
 import CfeBackground from '@/components/background'
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
     CfeBackground
   }

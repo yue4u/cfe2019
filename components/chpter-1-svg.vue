@@ -9,93 +9,93 @@
     <g id="Artboard_1" data-name="Artboard 1">
       <image
         id="bubble"
+        :xlink:href="require('@/assets/chapter-1/bubble.png')"
         x="145"
         y="155"
         width="958"
         height="1971"
-        :xlink:href="require('@/assets/chapter-1/bubble.png')"
       />
       <image
         id="grass"
+        :xlink:href="require('@/assets/chapter-1/grass.png')"
         x="165"
         y="181"
         width="1077"
         height="1795"
-        :xlink:href="require('@/assets/chapter-1/grass.png')"
       />
       <image
         id="wood_close"
+        :xlink:href="require('@/assets/chapter-1/wood-close.png')"
         data-name="wood close"
         x="329"
         y="617"
         width="515"
         height="795"
-        :xlink:href="require('@/assets/chapter-1/wood-close.png')"
       />
       <image
         id="wood_open"
+        :xlink:href="require('@/assets/chapter-1/wood-open.png')"
         data-name="wood open"
         x="352"
         y="631"
         width="561"
         height="852"
-        :xlink:href="require('@/assets/chapter-1/wood-open.png')"
       />
       <image
         id="baby"
+        :xlink:href="require('@/assets/chapter-1/baby.png')"
         x="473"
         y="713"
         width="354"
         height="657"
-        :xlink:href="require('@/assets/chapter-1/baby.png')"
       />
       <image
         id="star-1"
+        :xlink:href="require('@/assets/chapter-1/star-1.png')"
         x="306"
         y="851"
         width="121"
         height="186"
-        :xlink:href="require('@/assets/chapter-1/star-1.png')"
       />
       <image
         id="star-2"
+        :xlink:href="require('@/assets/chapter-1/star-2.png')"
         x="328"
         y="1151"
         width="138"
         height="196"
-        :xlink:href="require('@/assets/chapter-1/star-2.png')"
       />
       <image
         id="star-3"
+        :xlink:href="require('@/assets/chapter-1/star-3.png')"
         x="828"
         y="1270"
         width="132"
         height="130"
-        :xlink:href="require('@/assets/chapter-1/star-3.png')"
       />
       <image
         id="star-4"
+        :xlink:href="require('@/assets/chapter-1/star-4.png')"
         x="857"
         y="1026"
         width="97"
         height="143"
-        :xlink:href="require('@/assets/chapter-1/star-4.png')"
       />
       <image
         id="star-5"
+        :xlink:href="require('@/assets/chapter-1/star-5.png')"
         x="817"
         y="724"
         width="137"
         height="132"
-        :xlink:href="require('@/assets/chapter-1/star-5.png')"
       />
       <image
         id="star-6"
+        :xlink:href="require('@/assets/chapter-1/star-6.png')"
         x="374"
         y="635"
         width="207"
         height="178"
-        :xlink:href="require('@/assets/chapter-1/star-6.png')"
       />
     </g>
   </svg>

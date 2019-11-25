@@ -9,14 +9,14 @@
       <h1 class="title">チャプター</h1>
       <ul class="chapter-list">
         <li
-          class="chapter-item"
           v-for="(chapter, n) in chapters"
           :key="chapter"
+          class="chapter-item"
         >
-          <nuxt-link class="chapter-link" :to="`chapter-${n + 1}`">
+          <nuxt-link :to="`chapter-${n + 1}`" class="chapter-link">
             <img
-              class="chapter-img"
               :src="require(`@/assets/chapter-${n + 1}.png`)"
+              class="chapter-img"
               alt=""
               srcset=""
             />

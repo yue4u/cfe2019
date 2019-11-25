@@ -8,116 +8,116 @@
     <g id="Artboard_1" data-name="Artboard 1">
       <image
         id="top-bg"
+        :xlink:href="require('@/assets/top-bg.png')"
         x="-280"
         width="1840"
         height="2208"
-        :xlink:href="require('@/assets/top-bg.png')"
       />
       <image
         id="brush-right"
+        :xlink:href="require('@/assets/brush-right.png')"
         x="855"
         y="1304"
         width="372"
         height="509"
-        :xlink:href="require('@/assets/brush-right.png')"
       />
       <image
         id="brush-left"
+        :xlink:href="require('@/assets/brush-left.png')"
         x="9"
         y="1332"
         width="374"
         height="550"
-        :xlink:href="require('@/assets/brush-left.png')"
       />
       <g id="kean">
         <image
           id="clinenn"
+          :xlink:href="require('@/assets/clinenn.png')"
           x="372"
           y="853"
           width="491"
           height="1127"
-          :xlink:href="require('@/assets/clinenn.png')"
         />
         <image
           id="glass"
+          :xlink:href="require('@/assets/glass.png')"
           x="305"
           y="1249"
           width="1149"
           height="242"
-          :xlink:href="require('@/assets/glass.png')"
         />
         <image
           id="light"
+          :xlink:href="require('@/assets/light.png')"
           x="405"
           y="1116"
           width="764"
           height="479"
-          :xlink:href="require('@/assets/light.png')"
         />
         <image
           id="crystal"
+          :xlink:href="require('@/assets/crystal.png')"
           x="552"
           y="1323"
           width="83"
           height="80"
-          :xlink:href="require('@/assets/crystal.png')"
         />
       </g>
       <image
         id="top-tree"
+        :xlink:href="require('@/assets/top-tree.png')"
         x="-105"
         width="1434"
         height="2217"
-        :xlink:href="require('@/assets/top-tree.png')"
       />
       <g id="leaf">
         <image
           id="l1"
+          :xlink:href="require('@/assets/l1.png')"
           x="-40"
           y="1923"
           width="485"
           height="360"
-          :xlink:href="require('@/assets/l1.png')"
         />
         <image
           id="l2"
+          :xlink:href="require('@/assets/l2.png')"
           x="-81"
           y="1723"
           width="427"
           height="553"
-          :xlink:href="require('@/assets/l2.png')"
         />
         <image
           id="l3"
+          :xlink:href="require('@/assets/l3.png')"
           x="-102"
           y="1594"
           width="335"
           height="540"
-          :xlink:href="require('@/assets/l3.png')"
         />
         <image
           id="r3"
+          :xlink:href="require('@/assets/r3.png')"
           x="781"
           y="1887"
           width="448"
           height="447"
-          :xlink:href="require('@/assets/r3.png')"
         />
         <image
           id="r2"
+          :xlink:href="require('@/assets/r2.png')"
           x="897"
           y="1715"
           width="409"
           height="533"
-          :xlink:href="require('@/assets/r2.png')"
         />
         <image
           id="r1"
+          :xlink:href="require('@/assets/r1.png')"
           x="1070"
           y="1585"
           width="220"
           height="602"
-          :xlink:href="require('@/assets/r1.png')"
         />
       </g>
     </g>

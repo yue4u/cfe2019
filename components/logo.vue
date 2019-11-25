@@ -1,5 +1,5 @@
 <template>
-  <img class="logo" :src="require('@/assets/logo.png')" alt="Logo" />
+  <img :src="require('@/assets/logo.png')" class="logo" alt="Logo" />
 </template>
 
 <style lang="scss" scoped>

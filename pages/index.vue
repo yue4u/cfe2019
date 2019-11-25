@@ -1,11 +1,26 @@
 <template>
-  <div class="container"></div>
+  <main class="container">
+    <cfe-entrance-svg class="svg" />
+  </main>
 </template>
 
 <script>
+import CfeEntranceSvg from '@/components/entrance-svg'
 export default {
-  components: {}
+  components: {
+    CfeEntranceSvg
+  }
 }
 </script>
 
-<style></style>
+<style>
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+}
+.svg {
+  margin: 0 auto;
+}
+</style>

@@ -1,11 +1,5 @@
 export default {
   mode: 'spa',
-  css: [
-    {
-      src: './assets/scss/main.scss',
-      lang: 'scss'
-    }
-  ],
 
   /*
    ** Headers of the page
@@ -30,7 +24,12 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    {
+      src: './assets/scss/main.scss',
+      lang: 'scss'
+    }
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -45,7 +44,10 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa'],
+  modules: ['@nuxtjs/pwa', '@bazzite/nuxt-optimized-images'],
+  optimizedImages: {
+    optimizeImages: true
+  },
   /*
    ** Build configuration
    */

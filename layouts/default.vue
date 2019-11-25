@@ -38,6 +38,11 @@ html {
   background-color: #0f1305;
 }
 
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 12px;
+  }
+}
 body {
   margin: 0;
 }

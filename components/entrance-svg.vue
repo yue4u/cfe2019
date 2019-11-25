@@ -170,7 +170,7 @@ export default {
     })
 
     gsap.to(['#l1', '#l3', '#r2'], 2, moving.leaf)
-    gsap.to(['#l2', '#l3', '#r3', '#r1'], 2, {
+    gsap.to(['#l2', '#r3', '#r1'], 2, {
       ...moving.leaf,
       rotation: 5
     })

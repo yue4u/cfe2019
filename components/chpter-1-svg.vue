@@ -144,12 +144,15 @@
 </template>
 
 <script>
-import { gsap } from 'gsap'
+import { gsap, Back } from 'gsap'
 import { fadeIn, appear } from '@/helpers'
 
 export default {
   data() {
-    return {}
+    return {
+      clickable: true,
+      clickCount: 0
+    }
   },
   mounted() {
     gsap
@@ -182,6 +185,20 @@ export default {
   },
   methods: {
     sway() {
+      if (!this.clickable) return
+
+      this.clickable = !this.clickable
+      this.clickCount++
+
+      if (this.clickCount === 3) {
+        this.showOpen()
+        return
+      }
+
+      setTimeout(() => {
+        this.clickable = true
+      }, 1000)
+
       gsap
         .timeline()
         .to('#wood-close-wrapper', 0.3, {
@@ -196,6 +213,27 @@ export default {
           rotate: 0,
           transformOrigin: 'center center'
         })
+    },
+    showOpen() {
+      gsap
+        .timeline({ delay: 0 })
+        .fromTo('#wood-close-wrapper', appear.time, fadeIn.to, fadeIn.from)
+        .fromTo('#wood-open', appear.time, fadeIn.from, fadeIn.to)
+        .to('#wood-close-mask', { display: 'none' })
+        .fromTo('#baby', appear.time, fadeIn.from, fadeIn.to)
+
+      setTimeout(() => {
+        new Array(6).fill(0).forEach((_, n) => {
+          gsap.to(`#star-${n + 1}`, Math.random() + 1, {
+            repeat: -1,
+            yoyo: true,
+            ease: Back.ease,
+            translateX: n * 10 * Math.random(),
+            translateY: n * 10 * Math.random(),
+            opacity: 1
+          })
+        })
+      }, 3000)
     }
   }
 }

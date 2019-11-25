@@ -6,6 +6,21 @@
     height="2208"
     viewBox="0 0 1242 2208"
   >
+    <defs>
+      <filter id="shadow">
+        <feDropShadow
+          id="shadow-data"
+          dx="5"
+          dy="5"
+          stdDepathsviation="20"
+          flood-color="#fff"
+          flood-opacity=".2"
+        />
+      </filter>
+      <filter id="blur">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+      </filter>
+    </defs>
     <g id="Artboard_1" data-name="Artboard 1">
       <image
         id="bubble"
@@ -23,17 +38,44 @@
         width="1077"
         height="1795"
       />
+      <g id="wood-close-wrapper">
+        <g style="filter:url(#blur);" id="wood-close-shadow">
+          <image
+            :xlink:href="require('@/assets/chapter-1/wood-close.png')"
+            data-name="wood close"
+            x="329"
+            y="617"
+            width="515"
+            height="795"
+            style="filter:url(#shadow);"
+          />
+        </g>
+
+        <image
+          @click="sway"
+          id="wood-close"
+          :xlink:href="require('@/assets/chapter-1/wood-close.png')"
+          data-name="wood close"
+          x="329"
+          y="617"
+          width="515"
+          height="795"
+        />
+        <rect
+          id="wood-close-mask"
+          stroke="transparent"
+          fill-opacity="0"
+          stroke-opacity="0"
+          fill="transparent"
+          x="329"
+          y="617"
+          width="515"
+          height="795"
+          @click="sway"
+        />
+      </g>
       <image
-        id="wood_close"
-        :xlink:href="require('@/assets/chapter-1/wood-close.png')"
-        data-name="wood close"
-        x="329"
-        y="617"
-        width="515"
-        height="795"
-      />
-      <image
-        id="wood_open"
+        id="wood-open"
         :xlink:href="require('@/assets/chapter-1/wood-open.png')"
         data-name="wood open"
         x="352"
@@ -100,3 +142,88 @@
     </g>
   </svg>
 </template>
+
+<script>
+import { gsap } from 'gsap'
+import { fadeIn, appear } from '@/helpers'
+
+export default {
+  data() {
+    return {}
+  },
+  mounted() {
+    gsap
+      .timeline({ delay: 0 })
+      .fromTo('#bubble', appear.time, fadeIn.from, fadeIn.to)
+      .fromTo('#grass', appear.time, fadeIn.from, fadeIn.to)
+      .fromTo(
+        ['#wood-close', '#wood-close-shadow'],
+        appear.time,
+        fadeIn.from,
+        fadeIn.to
+      )
+
+    gsap.to('#shadow-data', 1, {
+      yoyo: true,
+      repeat: -1,
+      attr: {
+        dx: 30,
+        dy: 30,
+        stdDepathsviation: 10,
+        floodOpacity: 5
+      }
+    })
+
+    gsap.to('#wood-close-shadow', 1, {
+      yoyo: true,
+      repeat: -1,
+      scale: 1.01
+    })
+  },
+  methods: {
+    sway() {
+      gsap
+        .timeline()
+        .to('#wood-close-wrapper', 0.3, {
+          rotate: 10,
+          transformOrigin: 'center center'
+        })
+        .to('#wood-close-wrapper', 0.3, {
+          rotate: -5,
+          transformOrigin: 'center center'
+        })
+        .to('#wood-close-wrapper', 0.3, {
+          rotate: 0,
+          transformOrigin: 'center center'
+        })
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+#bubble,
+#grass,
+#wood-open,
+#wood-close,
+#wood-close-shadow,
+#baby,
+#star-1,
+#star-2,
+#star-3,
+#star-4,
+#star-5,
+#star-6 {
+  opacity: 0;
+  pointer-events: none;
+}
+#wood-close {
+  &-mask {
+    cursor: pointer;
+  }
+  pointer-events: initial;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+</style>

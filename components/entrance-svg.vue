@@ -125,11 +125,11 @@
 </template>
 
 <script>
-import { TweenMax, TimelineMax, Back, Elastic } from 'gsap'
+import { gsap, Back, Elastic } from 'gsap'
 
 export default {
   mounted() {
-    const tl = new TimelineMax({ delay: 0 })
+    const tl = gsap.timeline({ delay: 0 })
     const appear = {
       time: 1,
       from: { opacity: 0, y: 1000 },
@@ -163,19 +163,19 @@ export default {
       .fromTo(['#leaf'], appear.time, fadeIn.from, fadeIn.to)
       .fromTo('#kean', appear.time, fadeIn.from, fadeIn.to)
 
-    TweenMax.to(['#brush-right'], 1, moving.bush)
-    TweenMax.to(['#brush-left'], 1, {
+    gsap.to(['#brush-right'], 1, moving.bush)
+    gsap.to(['#brush-left'], 1, {
       ...moving.bush,
       rotation: -5
     })
 
-    TweenMax.to(['#l1', '#l3', '#r2'], 2, moving.leaf)
-    TweenMax.to(['#l2', '#l3', '#r3', '#r1'], 2, {
+    gsap.to(['#l1', '#l3', '#r2'], 2, moving.leaf)
+    gsap.to(['#l2', '#l3', '#r3', '#r1'], 2, {
       ...moving.leaf,
       rotation: 5
     })
 
-    TweenMax.to(['#light'], 1.5, {
+    gsap.to(['#light'], 1.5, {
       opacity: 0,
       repeat: -1,
       yoyo: true,

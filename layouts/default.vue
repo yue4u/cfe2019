@@ -24,6 +24,8 @@ export default {
 html {
   --tree: #89311f;
   --bg: #fde4be;
+  --txt-green: #0bba00;
+  --txt-orange: #e7904c;
   font-family: 'kks', sans-serif;
   color: var(--tree);
   font-size: 16px;
@@ -41,6 +43,7 @@ body {
 }
 
 a {
+  text-decoration: inherit;
   color: inherit;
 }
 *,

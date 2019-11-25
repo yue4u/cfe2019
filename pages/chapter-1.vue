@@ -1,11 +1,15 @@
 <template>
   <main class="chapter">
-    <h1>chapter 1</h1>
+    <cfe-chapter-1-svg class="cfe-svg" />
   </main>
 </template>
 
 <script>
+import CfeChapter1Svg from '@/components/chpter-1-svg'
 export default {
+  components: {
+    CfeChapter1Svg
+  },
   data() {
     return {}
   }
@@ -13,6 +17,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/main.scss';
+
 .chapter {
   max-width: 640px;
   margin: 0 auto;

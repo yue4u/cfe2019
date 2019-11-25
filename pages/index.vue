@@ -16,7 +16,7 @@
         ><span class="menu">ケサリの旅とは</span></nuxt-link
       >
     </div>
-    <cfe-entrance-svg class="svg" />
+    <cfe-entrance-svg class="cfe-svg" />
     <cfe-logo />
   </main>
 </template>
@@ -24,7 +24,6 @@
 <script>
 import CfeEntranceSvg from '@/components/entrance-svg'
 import CfeLogo from '@/components/logo'
-import '@/assets/scss/main.scss'
 
 export default {
   components: {
@@ -35,6 +34,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/scss/main.scss';
+
 .container {
   max-width: 640px;
   margin: 0 auto;
@@ -75,10 +76,5 @@ export default {
   display: block;
   margin-bottom: 1rem;
   color: #e1d73d;
-}
-.svg {
-  height: 100vh;
-  top: 0;
-  margin: 0 auto;
 }
 </style>

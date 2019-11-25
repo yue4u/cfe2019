@@ -1,6 +1,6 @@
 <template>
   <main class="chapter">
-    <h1>chapter 8</h1>
+    <img class="img" :src="require('@/assets/chapter-8/main.jpg')" />
   </main>
 </template>
 
@@ -17,5 +17,8 @@ export default {
   max-width: 640px;
   margin: 0 auto;
   display: block;
+}
+.img {
+  width: 100%;
 }
 </style>

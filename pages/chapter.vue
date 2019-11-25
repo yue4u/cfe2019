@@ -13,7 +13,7 @@
           :key="chapter"
           class="chapter-item"
         >
-          <nuxt-link :to="`chapter-${n + 1}`" class="chapter-link">
+          <nuxt-link :to="`/chapter-${n + 1}`" class="chapter-link">
             <img
               :src="require(`@/assets/chapter-${n + 1}.png`)"
               class="chapter-img"

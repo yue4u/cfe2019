@@ -158,9 +158,9 @@ export default {
     gsap
       .timeline({ delay: 0 })
       .fromTo('#bubble', appear.time, fadeIn.from, fadeIn.to)
-      .fromTo('#grass', appear.time, fadeIn.from, fadeIn.to)
+      // .fromTo('#grass', appear.time, fadeIn.from, fadeIn.to)
       .fromTo(
-        ['#wood-close', '#wood-close-shadow'],
+        ['#grass', '#wood-close', '#wood-close-shadow'],
         appear.time,
         fadeIn.from,
         fadeIn.to
@@ -201,15 +201,15 @@ export default {
 
       gsap
         .timeline()
-        .to('#wood-close-wrapper', 0.3, {
+        .to('#wood-close-wrapper', 0.2, {
           rotate: 10,
           transformOrigin: 'center center'
         })
-        .to('#wood-close-wrapper', 0.3, {
+        .to('#wood-close-wrapper', 0.2, {
           rotate: -5,
           transformOrigin: 'center center'
         })
-        .to('#wood-close-wrapper', 0.3, {
+        .to('#wood-close-wrapper', 0.2, {
           rotate: 0,
           transformOrigin: 'center center'
         })

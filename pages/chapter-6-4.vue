@@ -188,6 +188,13 @@ export default {
       this.count += 0.4
 
       if (this.count >= 1.2) {
+        gsap.to('#crystal', 0.1, {
+          rotate: 5,
+          yoyo: true,
+          repeat: -1,
+          transformOrigin: 'center center'
+        })
+
         clearTimeout(timeoutId)
         gsap.fromTo('#next', appear.time, fadeIn.from, fadeIn.to)
       }

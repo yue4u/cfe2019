@@ -12,15 +12,15 @@
   z-index: -1;
   width: 110vw;
   height: 110vh;
-  opacity: 0.5;
+  opacity: 0.3;
   &-row {
     background: url('../assets/svg/bg-face.svg');
     height: 14vh;
     width: 120vw;
-    animation: move 30s linear infinite;
+    animation: move 60s linear infinite;
     &:nth-child(2n) {
       margin-left: -4vw;
-      animation: move 30s linear infinite reverse;
+      animation: move 60s linear infinite reverse;
     }
   }
 }

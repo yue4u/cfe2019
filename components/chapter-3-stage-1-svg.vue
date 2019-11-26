@@ -63,6 +63,7 @@ export default {
         .fromTo('#butterfly-1', 0.5, fadeIn.from, fadeIn.to)
         .fromTo('#butterfly-1', 0.5, fadeIn.to, fadeIn.from)
         .fromTo('#butterfly-2', appear.time, fadeIn.from, fadeIn.to)
+      // use timeout beacause it might related to a bug in gasp
       setTimeout(() => {
         gsap
           .timeline({ delay: 0 })

@@ -1,10 +1,10 @@
-# cfe2019
+# ケサリの旅
 
-> My legendary Nuxt.js project
+> cfe2019 project
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 

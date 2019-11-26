@@ -83,6 +83,10 @@ export default {
           ...fadeIn.to,
           x: -20
         })
+
+      setTimeout(() => {
+        this.$router.push('/chapter-6-4')
+      }, 3000)
     }, 1500)
   }
 }

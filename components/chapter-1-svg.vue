@@ -233,6 +233,7 @@ export default {
             opacity: 1
           })
         })
+        this.$emit('stage-done')
       }, 3000)
     }
   }

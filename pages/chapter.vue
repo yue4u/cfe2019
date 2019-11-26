@@ -8,18 +8,9 @@
     <nav class="chapter-menu">
       <h1 class="title">チャプター</h1>
       <ul class="chapter-list">
-        <li
-          v-for="(chapter, n) in chapters"
-          :key="chapter"
-          class="chapter-item"
-        >
-          <nuxt-link :to="`/chapter-${n + 1}`" class="chapter-link">
-            <img
-              :src="require(`@/assets/chapter-${n + 1}.png`)"
-              class="chapter-img"
-              alt=""
-              srcset=""
-            />
+        <li v-for="(chapter, n) in chapters" :key="chapter" class="chapter-item">
+          <nuxt-link :to="`/chapter-${n + 1}-heading`" class="chapter-link">
+            <img :src="require(`@/assets/chapter-${n + 1}.png`)" class="chapter-img" alt srcset />
             <span class="chapter-title">{{ chapter }}</span>
           </nuxt-link>
         </li>

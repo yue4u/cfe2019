@@ -10,7 +10,7 @@ def replace_link(match):
     _txt = match.group(0)
     _id = match.group(1)
     _link = match.group(2)
-    return _txt.replace(_link, f":xlink:href=\"require('@/assets/chapter/{_id}.png')")
+    return _txt.replace(_link, f":xlink:href=\"require('@/assets/chapter-6/{_id}.png')")
 
 
 with open(file_name, 'r') as f:

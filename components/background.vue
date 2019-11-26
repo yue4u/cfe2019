@@ -17,10 +17,10 @@
     background: url('../assets/svg/bg-face.svg');
     height: 14vh;
     width: 120vw;
-    animation: move 60s linear infinite;
+    //animation: move 60s linear infinite;
     &:nth-child(2n) {
       margin-left: -4vw;
-      animation: move 60s linear infinite reverse;
+      //  animation: move 60s linear infinite reverse;
     }
   }
 }

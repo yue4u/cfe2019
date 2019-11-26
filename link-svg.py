@@ -44,12 +44,6 @@ export default {
       .fromTo('#s2-head', appear.time, fadeIn.from, fadeIn.to)
       .fromTo('#s2-body', appear.time, fadeIn.from, fadeIn.to)
       .fromTo('#s2-pearl', appear.time, fadeIn.from, fadeIn.to)
-
-      .to('#s2-surprise', 0.2, {
-        opacity: 1,
-        rotate: 10,
-        transformOrigin: 'center center'
-      })
     }, 1500)
   }
 }

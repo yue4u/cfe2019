@@ -37,7 +37,12 @@ export default {
   top: 1rem;
   z-index: 999;
   width: 20rem;
+  transition: 0.3s all ease-in-out;
   cursor: pointer;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
 }
 .menu {
   position: absolute;

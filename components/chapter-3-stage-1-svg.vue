@@ -72,8 +72,7 @@ export default {
           .fromTo('#butterfly-3', 0.5, fadeIn.from, fadeIn.to)
 
         setTimeout(() => {
-          console.log('???')
-          this.$router.push('/chapter-3-stage-2')
+          this.$router.push('/chapter-3-2')
         }, 1000)
       }, 2500)
     }, 1300)

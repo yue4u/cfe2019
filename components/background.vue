@@ -1,10 +1,6 @@
 <template>
   <div class="bg">
-    <div
-      v-for="row in Array(10).keys()"
-      :key="`bg-row-${row}`"
-      class="bg-row"
-    />
+    <div v-for="row in Array(10).keys()" :key="`bg-row-${row}`" class="bg-row" />
   </div>
 </template>
 
@@ -21,9 +17,19 @@
     background: url('../assets/svg/bg-face.svg');
     height: 14vh;
     width: 120vw;
+    animation: move 30s linear infinite;
     &:nth-child(2n) {
       margin-left: -4vw;
+      animation: move 30s linear infinite reverse;
     }
+  }
+}
+@keyframes move {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0;
   }
 }
 </style>

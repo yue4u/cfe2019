@@ -70,7 +70,7 @@ export default {
           .fromTo('#butterfly-2', 0.5, fadeIn.to, fadeIn.from)
           .fromTo('#butterfly-3', 0.5, fadeIn.from, fadeIn.to)
       }, 2500)
-    }, 3000)
+    }, 1300)
   }
 }
 </script>

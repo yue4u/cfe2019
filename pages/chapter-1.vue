@@ -48,10 +48,4 @@ export default {
 .svg-1 {
   transition: all 0.3s ease-in-out;
 }
-.chapter {
-  max-width: 640px;
-  margin: 0 auto;
-  display: block;
-  background-color: #fff;
-}
 </style>

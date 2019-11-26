@@ -35,7 +35,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-color: #0f1305;
 }
 
 @media screen and (max-width: 1400px) {

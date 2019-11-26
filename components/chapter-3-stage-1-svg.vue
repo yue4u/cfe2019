@@ -70,6 +70,11 @@ export default {
           .fromTo('#what', 0.3, fadeIn.from, fadeIn.to)
           .fromTo('#butterfly-2', 0.5, fadeIn.to, fadeIn.from)
           .fromTo('#butterfly-3', 0.5, fadeIn.from, fadeIn.to)
+
+        setTimeout(() => {
+          console.log('???')
+          this.$router.push('/chapter-3-stage-2')
+        }, 1000)
       }, 2500)
     }, 1300)
   }

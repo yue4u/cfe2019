@@ -43,3 +43,25 @@
   </svg>
 </template>
 
+<script>
+import { gsap, Back } from 'gsap'
+import { fadeIn, appear } from '@/helpers'
+
+export default {
+  mounted() {
+    gsap.to('#what', 1, {
+      repeat: -1,
+      y: -30,
+      x: -10,
+      //scale: 1.2,
+      opacity: 1
+    })
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+#what {
+  opacity: 0;
+}
+</style>

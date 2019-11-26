@@ -217,10 +217,10 @@ export default {
     showOpen() {
       gsap
         .timeline({ delay: 0 })
-        .fromTo('#wood-close-wrapper', appear.time, fadeIn.to, fadeIn.from)
-        .fromTo('#wood-open', appear.time, fadeIn.from, fadeIn.to)
+        .fromTo('#wood-close-wrapper', 0.5, fadeIn.to, fadeIn.from)
+        .fromTo('#wood-open', 0.5, fadeIn.from, fadeIn.to)
         .to('#wood-close-mask', { display: 'none' })
-        .fromTo('#baby', appear.time, fadeIn.from, fadeIn.to)
+        .fromTo('#baby', 0.5, fadeIn.from, fadeIn.to)
 
       setTimeout(() => {
         new Array(6).fill(0).forEach((_, n) => {

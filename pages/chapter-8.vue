@@ -13,11 +13,8 @@ export default {
 </script>
 
 <style lang="scss">
-.chapter {
-  max-width: 640px;
-  margin: 0 auto;
-  display: block;
-}
+@import '@/assets/scss/main.scss';
+
 .img {
   width: 100%;
 }

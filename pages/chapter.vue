@@ -39,6 +39,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/main.scss';
+
 .title {
   margin-bottom: 2rem;
   text-align: center;
@@ -46,9 +48,9 @@ export default {
 }
 
 .chapter {
-  max-width: 640px;
-  margin: 0 auto;
-  display: block;
+  overflow: auto;
+  padding: 5rem 0;
+  height: 100vh;
   &-list {
     padding: 0;
     width: 100%;
@@ -75,10 +77,10 @@ export default {
   }
   &-menu {
     padding: 3rem;
-    background-color: var(--bg);
+    //background-color: var(--bg);
     border-radius: 2rem;
-    width: fit-content;
     margin: 0 auto;
+    width: 90%;
     //  display: flex;
     //  align-items: flex-start;
     //  flex-direction: column;
@@ -86,6 +88,9 @@ export default {
   &-title {
     font-size: 2rem;
     display: inline-block;
+  }
+  &-link {
+    display: block;
   }
 }
 

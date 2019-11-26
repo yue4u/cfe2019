@@ -91,14 +91,16 @@
           height="508"
         />
       </g>
-      <image
-        id="next"
-        x="933"
-        y="1953"
-        width="126"
-        height="102"
-        :xlink:href="require('@/assets/chapter-6/next.png')"
-      />
+      <nuxt-link to="chapter-7-heading">
+        <image
+          id="next"
+          x="933"
+          y="1953"
+          width="126"
+          height="102"
+          :xlink:href="require('@/assets/chapter-6/next.png')"
+        />
+      </nuxt-link>
     </g>
   </svg>
   </main>
@@ -184,7 +186,7 @@ export default {
 #next {
   opacity: 0;
 }
-#crystal-mask {
+#crystal-mask{
   cursor: pointer;
 }
 </style>

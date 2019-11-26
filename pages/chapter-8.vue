@@ -1,5 +1,5 @@
 <template>
-  <main class="chapter">
+  <main>
     <img class="img" :src="require('@/assets/chapter-8/main.jpg')" />
   </main>
 </template>

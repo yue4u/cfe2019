@@ -1,21 +1,30 @@
 <template>
-  <div>
+  <div class="chapter">
+    <cfe-go-home v-if="showGoHome" />
     <cfe-background />
     <nuxt />
   </div>
 </template>
 
 <script>
+import CfeGoHome from '@/components/go-home'
 import CfeBackground from '@/components/background'
 export default {
   name: 'Home',
   components: {
+    CfeGoHome,
     CfeBackground
+  },
+  computed: {
+    showGoHome() {
+      return this.$route.path !== '/'
+    }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '@/assets/scss/main.scss';
 @font-face {
   font-family: 'kks';
   src: url('../assets/UDDigiKyokashoN-B.woff') format('woff');
@@ -40,6 +49,12 @@ html {
 @media screen and (max-width: 1400px) {
   html {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
   }
 }
 body {

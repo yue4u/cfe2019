@@ -1,5 +1,5 @@
 <template>
-  <main class="chapter">
+  <main>
     <h1>chapter 4</h1>
   </main>
 </template>

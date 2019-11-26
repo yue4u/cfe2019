@@ -1,10 +1,5 @@
 <template>
-  <main class="chapter">
-    <nav class="nav">
-      <nuxt-link to="/">
-        <img class="return" src="@/assets/return.png" alt="about" />
-      </nuxt-link>
-    </nav>
+  <main class="chapter-mod">
     <nav class="chapter-menu">
       <h1 class="title">チャプター</h1>
       <ul class="chapter-list">
@@ -48,9 +43,11 @@ export default {
 }
 
 .chapter {
-  overflow: auto;
-  padding: 5rem 0;
-  height: 100vh;
+  &-mod {
+    overflow: auto;
+    padding: 5rem 0;
+    height: 100vh;
+  }
   &-list {
     padding: 0;
     width: 100%;

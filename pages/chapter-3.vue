@@ -1,5 +1,5 @@
 <template>
-  <main class="chapter">
+  <main>
     <cfe-chapter-3-stage-1-svg class="cfe-svg" />
   </main>
 </template>

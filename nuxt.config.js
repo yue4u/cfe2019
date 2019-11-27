@@ -15,9 +15,9 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || ''
       },
-      { name: 'og:title', content: 'SAONE Project' },
-      { name: 'og:site_name', content: 'SAONE' },
-      { name: 'og:url', content: 'saone.digital' },
+      { name: 'og:title', content: 'ケサリの旅' },
+      { name: 'og:site_name', content: 'ケサリの旅' },
+      { name: 'og:url', content: 'https://cfe.sakura.ne.jp/w_dhu/' },
       {
         name: 'og:description',
         content: process.env.npm_package_description || ''

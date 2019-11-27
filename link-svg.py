@@ -14,7 +14,7 @@ def replace_link(match):
     global _ids
     _ids.append(_id)
     _link = match.group(2)
-    return _txt.replace(_link, f":xlink:href=\"require('@/assets/chapter-7/{_id}.png')")
+    return _txt.replace(_link, f":xlink:href=\"require('@/assets/chapter-2/{_id}.png')")
 
 
 with open(file_name, 'r') as f:

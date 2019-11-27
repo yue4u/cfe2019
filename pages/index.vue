@@ -2,19 +2,20 @@
   <main class="container">
     <div class="title-wrapper">
       <h1 class="title cfe-orange">
-        ケサリの<span class="cfe-green">旅</span>
+        <span>ケサリの</span>
+        <span class="cfe-green">旅</span>
       </h1>
 
       <nuxt-link class="start-link" to="/chapter-1">
         <span class="start">スタート</span>
       </nuxt-link>
 
-      <nuxt-link to="/chapter"
-        ><span class="menu">チャプター選択</span></nuxt-link
-      >
-      <nuxt-link to="/about"
-        ><span class="menu">ケサリの旅とは</span></nuxt-link
-      >
+      <nuxt-link to="/chapter">
+        <span class="menu">チャプター選択</span>
+      </nuxt-link>
+      <nuxt-link to="/about">
+        <span class="menu">ケサリの旅とは</span>
+      </nuxt-link>
     </div>
     <cfe-entrance-svg class="cfe-svg" />
     <cfe-logo />
@@ -42,6 +43,8 @@ export default {
   height: 100vh;
   display: flex;
   position: relative;
+
+  background: #312823;
 }
 
 .title {

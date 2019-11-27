@@ -300,6 +300,16 @@ export default {
         return
       }
 
+      if (this.count === 8) {
+        gsap
+          .timeline({ delay: 0 })
+          .fromTo(this.id, 0.2, fadeIn.to, fadeIn.from)
+          .fromTo('#spade', 0.2, fadeIn.from, fadeIn.to)
+
+        this.id = '#spade'
+        return
+      }
+
       if (this.count === 10) {
         setTimeout(() => {
           gsap
@@ -308,7 +318,9 @@ export default {
             .to('svg', 1, {
               y: '20vh'
             })
-          this.next = true
+          setTimeout(() => {
+            this.next = true
+          }, 1000)
         }, 1000)
       }
 

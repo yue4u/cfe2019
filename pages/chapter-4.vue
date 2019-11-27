@@ -107,6 +107,14 @@ export default {
         .timeline({ delay: 0 })
         .fromTo('#stage-1', appear.time, fadeIn.from, fadeIn.to)
         .fromTo('#chat-bubble-1', appear.time, fadeIn.from, fadeIn.to)
+
+      setTimeout(() => {
+        gsap.to('#green-light', 0.5, {
+          repeat: -1,
+          yoyo: true,
+          opacity: 1
+        })
+      }, 2000)
     }, 1500)
     window.addEventListener('click', () => {
       if (!this.clickable) return

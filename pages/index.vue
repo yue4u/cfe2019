@@ -48,6 +48,8 @@ export default {
 }
 
 .title {
+  display: flex;
+  justify-content: center;
   font-size: 6rem;
   margin-top: 5rem;
   text-shadow: 0 0 5px #000;

@@ -23,7 +23,7 @@ with open(file_name, 'r') as f:
     print(o)
 
 raw_name = file_name.split('/')[-1].replace('assets', '').replace('.', '-')
-out_file_name = f"components/chapter-{raw_name}.vue"
+out_file_name = f"pages/chapter-{raw_name}.vue"
 print(out_file_name)
 with open(out_file_name, 'w') as f:
     f.write("""<template>

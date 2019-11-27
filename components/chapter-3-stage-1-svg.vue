@@ -62,19 +62,19 @@ export default {
         .timeline({ delay: 0 })
         .fromTo('#butterfly-1', 0.5, fadeIn.from, fadeIn.to)
         .fromTo('#butterfly-1', 0.5, fadeIn.to, fadeIn.from)
-        .fromTo('#butterfly-2', appear.time, fadeIn.from, fadeIn.to)
+        .fromTo('#butterfly-2', 0.2, fadeIn.from, fadeIn.to)
       // use timeout beacause it might related to a bug in gasp
       setTimeout(() => {
         gsap
           .timeline({ delay: 0 })
           .fromTo('#what', 0.3, fadeIn.from, fadeIn.to)
-          .fromTo('#butterfly-2', 0.5, fadeIn.to, fadeIn.from)
+          .fromTo('#butterfly-2', 0.2, fadeIn.to, fadeIn.from)
           .fromTo('#butterfly-3', 0.5, fadeIn.from, fadeIn.to)
 
         setTimeout(() => {
           this.$router.push('/chapter-3-2')
-        }, 1000)
-      }, 2500)
+        }, 1500)
+      }, 1500)
     }, 1300)
   }
 }

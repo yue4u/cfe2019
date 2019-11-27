@@ -169,11 +169,11 @@ export default {
       const { right } = this.$refs.bar.getBoundingClientRect()
       const { left } = this.$refs.mask.getBoundingClientRect()
       const delta = right - left
-      if (delta < 100) {
+      if (delta < 120) {
         this.stage--
         console.log(this.stage)
         if (this.stage === 0) {
-          this.$router.push('/chapter-4')
+          this.$router.push('/chapter-3-3')
           return
         }
 

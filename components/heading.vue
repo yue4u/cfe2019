@@ -13,7 +13,9 @@ export default {
   },
   mounted() {
     this.id = setTimeout(() => {
-      this.$router.push(window.location.pathname.replace('-heading', ''))
+      this.$router.push(
+        window.location.pathname.replace('-heading', '').replace('/w_dhu', '')
+      )
     }, 1500)
   },
   beforeDestroy() {

@@ -8,10 +8,16 @@
 <script>
 export default {
   props: ['index', 'name'],
+  data() {
+    return { id: null }
+  },
   mounted() {
-    setTimeout(() => {
+    this.id = setTimeout(() => {
       this.$router.push(window.location.pathname.replace('-heading', ''))
     }, 1500)
+  },
+  beforeDestroy() {
+    clearTimeout(this.id)
   }
 }
 </script>

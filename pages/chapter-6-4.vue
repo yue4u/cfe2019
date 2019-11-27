@@ -83,7 +83,7 @@
             :xlink:href="require('@/assets/chapter-6/w1.png')"
           />
           <rect
-            :id="clickable?'crystal-mask':'crystal-mask-disabled'"
+            id="crystal-mask"
             @click="sway"
             fill="transparent"
             x="394"
@@ -106,8 +106,6 @@
     </svg>
   </main>
 </template>
-
-
 
 <script>
 import { gsap, Back, Linear } from 'gsap'
@@ -139,6 +137,13 @@ export default {
           opacity: 1
         })
       }, 2000)
+
+      gsap.to('#crystal', 0.1, {
+        rotate: 5,
+        yoyo: true,
+        repeat: -1,
+        transformOrigin: 'center center'
+      })
 
       gsap.to(['#w1', '#w2', '#w3', '#w4'], 4, {
         repeat: -1,
@@ -188,13 +193,6 @@ export default {
       this.count += 0.4
 
       if (this.count >= 1.2) {
-        gsap.to('#crystal', 0.1, {
-          rotate: 5,
-          yoyo: true,
-          repeat: -1,
-          transformOrigin: 'center center'
-        })
-
         clearTimeout(timeoutId)
         gsap.fromTo('#next', appear.time, fadeIn.from, fadeIn.to)
       }
@@ -202,7 +200,6 @@ export default {
   }
 }
 </script>
-
 
 <style lang="scss" scoped>
 @import '@/assets/scss/main.scss';
@@ -222,4 +219,3 @@ export default {
   cursor: pointer;
 }
 </style>
-

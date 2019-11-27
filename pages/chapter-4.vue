@@ -112,7 +112,7 @@ export default {
           yoyo: true,
           opacity: 1
         })
-      }, 2000)
+      }, 1000)
     }, 1500)
     const cb = () => {
       if (!this.clickable) return

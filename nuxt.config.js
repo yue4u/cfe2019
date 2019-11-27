@@ -31,7 +31,6 @@ export default {
         name: 'twitter:description',
         content: process.env.npm_package_description || ''
       }
-
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -75,7 +74,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['plugins/social.js'],
   /*
    ** Nuxt.js dev-modules
    */

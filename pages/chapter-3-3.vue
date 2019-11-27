@@ -27,7 +27,7 @@
         />
         <image
           id="green-light"
-          x="317"
+          x="190"
           y="519"
           width="1205"
           height="854"
@@ -153,6 +153,7 @@ export default {
           y: 50,
           opacity: 0
         })
+        .fromTo('#kodama', appear.time, fadeIn.from, fadeIn.to)
     }, 1500)
     const cb = () => {
       this.leaves--
@@ -180,7 +181,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-//#kodama,
+#kodama,
 //#crystal,
 #green-light,
 //#leaf-8,

@@ -111,8 +111,6 @@
   </main>
 </template>
 
-
-
 <script>
 import { gsap, Back, Linear } from 'gsap'
 import { fadeIn, appear, moving } from '@/helpers'
@@ -156,7 +154,7 @@ export default {
           opacity: 0
         })
     }, 1500)
-    window.addEventListener('click', () => {
+    const cb = () => {
       this.leaves--
 
       if (this.leaves < 2) {
@@ -173,11 +171,13 @@ export default {
         y: -20,
         opacity: 0
       })
-    })
+    }
+
+    document.addEventListener('click', cb)
+    //document.addEventListener('touchstart', cb)
   }
 }
 </script>
-
 
 <style lang="scss" scoped>
 //#kodama,
@@ -195,4 +195,3 @@ export default {
   opacity: 0;
 }
 </style>
-

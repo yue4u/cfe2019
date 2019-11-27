@@ -88,8 +88,6 @@
   </main>
 </template>
 
-
-
 <script>
 import { gsap, Back, Linear } from 'gsap'
 import { fadeIn, appear, moving } from '@/helpers'
@@ -116,7 +114,7 @@ export default {
         })
       }, 2000)
     }, 1500)
-    window.addEventListener('click', () => {
+    const cb = () => {
       if (!this.clickable) return
 
       setTimeout(() => {
@@ -168,11 +166,12 @@ export default {
       if (this.click === 5) {
         this.$router.push('/chapter-5-heading')
       }
-    })
+    }
+    document.addEventListener('click', cb)
+    //document.addEventListener('touchstart', cb)
   }
 }
 </script>
-
 
 <style lang="scss" scoped>
 #green-light,
@@ -186,4 +185,3 @@ export default {
   opacity: 0;
 }
 </style>
-

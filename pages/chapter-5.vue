@@ -117,7 +117,7 @@
             width="235"
             height="171"
             fill="transparent"
-            @click="()=>changeColor('white')"
+            @click="() => changeColor('white')"
           />
           <image
             id="q-orange"
@@ -134,7 +134,7 @@
             width="235"
             height="171"
             fill="transparent"
-            @click="()=>changeColor('orange')"
+            @click="() => changeColor('orange')"
           />
           <image
             id="q-blue"
@@ -151,7 +151,7 @@
             width="235"
             height="171"
             fill="transparent"
-            @click="()=>changeColor('blue')"
+            @click="() => changeColor('blue')"
           />
           <image
             id="q-red"
@@ -169,7 +169,7 @@
             width="235"
             fill="transparent"
             height="171"
-            @click="()=>changeColor('red')"
+            @click="() => changeColor('red')"
           />
         </g>
         <image
@@ -219,8 +219,6 @@
     </svg>
   </main>
 </template>
-
-
 
 <script>
 import { gsap, Back, Linear } from 'gsap'
@@ -313,7 +311,7 @@ export default {
             yoyo: true,
             ease: Back.ease
           })
-          window.addEventListener('click', () => {
+          const cb = () => {
             this.click++
             if (this.click === 1) {
               gsap
@@ -326,14 +324,15 @@ export default {
             if (this.click === 2) {
               this.$router.push('/chapter-6-heading')
             }
-          })
-        }, 1)
+          }
+          document.addEventListener('click', cb)
+          //document.addEventListener('touchstart', cb)
+        }, 1000)
       }
     }
   }
 }
 </script>
-
 
 <style lang="scss" scoped>
 //#star,
@@ -374,4 +373,3 @@ export default {
   }
 }
 </style>
-

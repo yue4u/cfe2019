@@ -1,6 +1,6 @@
 <template>
   <main>
-    <img class="img" :src="require('@/assets/chapter-8/main.jpg')" />
+    <img class="img" :src="require('@/assets/chapter-8/main.png')" />
   </main>
 </template>
 

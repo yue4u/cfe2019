@@ -86,7 +86,7 @@ export default {
 
       setTimeout(() => {
         this.$router.push('/chapter-6-4')
-      }, 3000)
+      }, 6000)
     }, 1500)
   }
 }

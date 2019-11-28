@@ -1,132 +1,328 @@
 <template>
   <main>
-    <img class="img" :src="require('@/assets/chapter-8/main.png')" />
-    <div class="appendx">
-      <img class="logo" :src="require('@/assets/logo.png')" />
-    </div>
-    <div class="links">
-      <p>
-        <social-sharing
-          url="https://cfe.sakura.ne.jp/w_dhu/"
-          title="破壊的な力を持つ緑の結晶を安全な場所に閉じ込めましょう"
-          description="破壊的な力を持つ緑の結晶を安全な場所に閉じ込めましょう"
-          hashtags="地層処分"
-          inline-template
-        >
-          <div class="social">
-            <network network="twitter">
-              <svg
-                width="50"
-                xmlns:dc="http://purl.org/dc/elements/1.1/"
-                xmlns:cc="http://creativecommons.org/ns#"
-                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                xmlns:svg="http://www.w3.org/2000/svg"
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                id="svg3626"
-                viewBox="0 0 300.00006 244.18703"
-                height="95"
-              >
-                <g transform="translate(-539.17946,-568.85777)" id="layer1">
-                  <path
-                    id="path3611"
-                    style="fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                    d="m 633.89823,812.04479 c 112.46038,0 173.95627,-93.16765 173.95627,-173.95625 0,-2.64628 -0.0539,-5.28062 -0.1726,-7.90305 11.93799,-8.63016 22.31446,-19.39999 30.49762,-31.65984 -10.95459,4.86937 -22.74358,8.14741 -35.11071,9.62551 12.62341,-7.56929 22.31446,-19.54304 26.88583,-33.81739 -11.81284,7.00307 -24.89517,12.09297 -38.82383,14.84055 -11.15723,-11.88436 -27.04079,-19.31655 -44.62892,-19.31655 -33.76374,0 -61.14426,27.38052 -61.14426,61.13233 0,4.79784 0.5364,9.46458 1.58538,13.94057 -50.81546,-2.55686 -95.87353,-26.88582 -126.02546,-63.87991 -5.25082,9.03545 -8.27852,19.53111 -8.27852,30.73006 0,21.21186 10.79366,39.93837 27.20766,50.89296 -10.03077,-0.30992 -19.45363,-3.06348 -27.69044,-7.64676 -0.009,0.25652 -0.009,0.50661 -0.009,0.78077 0,29.60957 21.07478,54.3319 49.0513,59.93435 -5.13757,1.40062 -10.54335,2.15158 -16.12196,2.15158 -3.93364,0 -7.76596,-0.38716 -11.49099,-1.1026 7.78383,24.2932 30.35457,41.97073 57.11525,42.46543 -20.92578,16.40207 -47.28712,26.17062 -75.93712,26.17062 -4.92898,0 -9.79834,-0.28036 -14.58427,-0.84634 27.05868,17.34379 59.18936,27.46396 93.72193,27.46396"
-                  />
-                </g>
-              </svg>
-            </network>
-            <network network="facebook">
-              <svg
-                width="100"
-                height="90"
-                viewBox="0 0 560 400"
-                xmlns="http://www.w3.org/2000/svg"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-              >
-                <g>
-                  <path
-                    d="M410.096 200.048c0-71.818-58.23-130.048-130.048-130.048-71.818 0-130.048 58.23-130.048 130.048 0 64.905 47.55 118.709 109.73 128.476v-90.875h-33.029v-37.601h33.029v-28.658c0-32.59 19.422-50.604 49.122-50.604 14.228 0 29.115 2.542 29.115 2.542v32.005h-16.405c-16.148 0-21.196 10.022-21.196 20.318v24.396h36.064l-5.761 37.601h-30.304v90.875c62.18-9.749 109.73-63.553 109.73-128.476z"
-                    fill="#fff"
-                  />
-                  <path
-                    d="M330.67 237.648l5.761-37.601h-36.064v-24.396c0-10.278 5.029-20.318 21.196-20.318h16.405v-32.005s-14.886-2.542-29.115-2.542c-29.7 0-49.122 17.996-49.122 50.604v28.658h-33.029v37.601h33.029v90.875c6.62 1.041 13.405 1.572 20.318 1.572 6.913 0 13.698-.549 20.318-1.572v-90.875h30.304z"
-                    fill="transparent"
-                  />
-                </g>
-              </svg>
-            </network>
-          </div>
-        </social-sharing>
-      </p>
-
-      <p class="link link-out">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.numo.or.jp/pr-info/pr/video/"
-          >地層処分について</a
-        >
-      </p>
-
-      <p class="link">
-        <nuxt-link to="/">ホームページに戻る</nuxt-link>
-      </p>
-    </div>
+    <svg
+      class="svg"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="1242"
+      height="13248"
+      viewBox="0 0 1242 13248"
+    >
+      <defs>
+        <style>
+  .cls-1 {
+    opacity: 0.54;
+  }
+        </style>
+      </defs>
+      <g id="Artboard_1" data-name="Artboard 1">
+        <image
+          id="all-tree"
+          class="cls-1"
+          x="-519"
+          y="-220"
+          width="2346"
+          height="13158"
+          :xlink:href="require('@/assets/chapter-8/all-tree.png')"
+        />
+        <g id="crystal">
+          <image
+            id="crystal-5"
+            x="463"
+            y="11487"
+            width="276"
+            height="1110"
+            :xlink:href="require('@/assets/chapter-8/crystal-5.png')"
+          />
+          <g id="crystal-4">
+            <image
+              id="green-light-4"
+              x="471"
+              y="10224"
+              width="292"
+              height="297"
+              :xlink:href="require('@/assets/chapter-8/green-light-4.png')"
+            />
+            <image
+              id="crystal-4-c"
+              x="475"
+              y="10222"
+              width="471"
+              height="1091"
+              :xlink:href="require('@/assets/chapter-8/crystal-4-c.png')"
+            />
+          </g>
+          <g id="crystal-3">
+            <image
+              id="green-light-3"
+              x="359"
+              y="8552"
+              width="578"
+              height="601"
+              :xlink:href="require('@/assets/chapter-8/green-light-3.png')"
+            />
+            <image
+              id="crystal-3-c"
+              x="246"
+              y="8549"
+              width="883"
+              height="1705"
+              :xlink:href="require('@/assets/chapter-8/crystal-3-c.png')"
+            />
+          </g>
+          <g id="crystal-2">
+            <image
+              id="green-light-2"
+              x="296"
+              y="6853"
+              width="668"
+              height="695"
+              :xlink:href="require('@/assets/chapter-8/green-light-2.png')"
+            />
+            <image
+              id="crystal-2-c"
+              x="336"
+              y="6849"
+              width="850"
+              height="1970"
+              :xlink:href="require('@/assets/chapter-8/crystal-2-c.png')"
+            />
+          </g>
+          <g id="crystal-1">
+            <image
+              id="green-light-1"
+              x="128"
+              y="5039"
+              width="972"
+              height="965"
+              :xlink:href="require('@/assets/chapter-8/green-light-1.png')"
+            />
+            <image
+              id="crystal-1-c"
+              x="327"
+              y="5196"
+              width="622"
+              height="651"
+              :xlink:href="require('@/assets/chapter-8/crystal-1-c.png')"
+            />
+          </g>
+        </g>
+        <image
+          id="mom"
+          x="102"
+          y="1226"
+          width="1000"
+          height="2390"
+          :xlink:href="require('@/assets/chapter-8/mom.png')"
+        />
+        <g id="kean2">
+          <image
+            id="shine"
+            x="137"
+            y="1926"
+            width="910"
+            height="1845"
+            :xlink:href="require('@/assets/chapter-8/shine.png')"
+          />
+          <image
+            id="love"
+            x="598"
+            y="1936"
+            width="120"
+            height="95"
+            :xlink:href="require('@/assets/chapter-8/love.png')"
+          />
+        </g>
+        <image
+          id="kodama"
+          x="168"
+          y="2724"
+          width="1010"
+          height="1192"
+          :xlink:href="require('@/assets/chapter-8/kodama.png')"
+        />
+        <g id="grass">
+          <image
+            id="grass5"
+            x="-7"
+            y="3409"
+            width="1242"
+            height="1127"
+            :xlink:href="require('@/assets/chapter-8/grass5.png')"
+          />
+          <image
+            id="grass4-move"
+            x="124"
+            y="3068"
+            width="1111"
+            height="926"
+            :xlink:href="require('@/assets/chapter-8/grass4-move.png')"
+          />
+          <image
+            id="grass3"
+            y="3230"
+            width="1242"
+            height="1398"
+            :xlink:href="require('@/assets/chapter-8/grass3.png')"
+          />
+          <image
+            id="grass1-move"
+            x="170"
+            y="3374"
+            width="851"
+            height="908"
+            :xlink:href="require('@/assets/chapter-8/grass1-move.png')"
+          />
+        </g>
+        <image
+          id="butterfly"
+          x="155"
+          y="259"
+          width="1023"
+          height="1774"
+          :xlink:href="require('@/assets/chapter-8/butterfly.png')"
+        />
+        <image
+          id="Fin"
+          x="205"
+          y="12751"
+          width="834"
+          height="283"
+          :xlink:href="require('@/assets/chapter-8/Fin.png')"
+        />
+      </g>
+    </svg>
+    <chapter-8-appendix />
   </main>
 </template>
 
+
+
 <script>
+import { gsap, Back, Power4 } from 'gsap'
+import { fadeIn, appear, moving } from '@/helpers'
+import Chapter8Appendix from '@/components/chapter-8-appendix'
 export default {
+  components: {
+    Chapter8Appendix
+  },
   data() {
-    return {}
+    return {
+      y: 0,
+      count: 0,
+      butterfly: false
+    }
+  },
+  mounted() {
+    setTimeout(() => {
+      gsap
+        .timeline({ delay: 0 })
+        .fromTo('#bg', appear.time, fadeIn.from, fadeIn.to)
+        .fromTo(
+          ['#all-tree', '#kodama', '#grass'],
+          appear.time,
+          fadeIn.from,
+          fadeIn.to
+        )
+        .fromTo(['#mom', '#shine'], appear.time, fadeIn.from, fadeIn.to)
+
+      gsap.to(
+        [
+          '#green-light-4',
+          '#green-light-3',
+          '#green-light-2',
+          '#green-light-1'
+        ],
+        1,
+        {
+          repeat: -1,
+          yoyo: true,
+          opacity: 1
+        }
+      )
+
+      document.addEventListener('scroll', () => {
+        this.y = window.scrollY
+        console.log(this.y)
+        if (!this.butterfly) {
+          gsap.fromTo(
+            '#butterfly',
+            appear.time,
+            { y: 100, ...fadeIn.from },
+            { y: 0, ...fadeIn.to }
+          )
+          this.butterfly = true
+        }
+
+        gsap.to(['#bg'], {
+          y: -this.y / 30,
+          ease: Power4.easeOut
+        })
+
+        gsap.to('#butterfly', {
+          y: -this.y,
+          ease: Power4.easeOut
+        })
+
+        gsap.to('#mon', {
+          y: -this.y / 25,
+          ease: Power4.easeOut
+        })
+
+        gsap.to('#shine', {
+          y: -this.y / 20,
+          ease: Power4.easeOut
+        })
+
+        gsap.to(['#kodama'], {
+          y: -this.y / 10,
+          ease: Power4.easeOut
+        })
+
+        gsap.to('#grass', {
+          y: -this.y / 5,
+          ease: Power4.easeOut
+        })
+        gsap.to('#all-tree', {
+          y: -this.y / 15,
+          ease: Power4.easeOut
+        })
+      })
+    }, 1500)
   }
 }
 </script>
 
-<style lang="scss" scoped>
-@import '@/assets/scss/main.scss';
 
+<style lang="scss" scoped>
 main {
-  background: #000;
+  background: linear-gradient(#fff, #a5ab6f 10%, #a5ab6f, #000, #000 30%);
   overflow: auto;
   color: #fff;
+  zoom: 1;
 }
-.img {
+#bg,
+#all-tree,
+//#crystal-5,
+#green-light-4,
+//#crystal-4-c,
+#green-light-3,
+//#crystal-3-c,
+#green-light-2,
+//#crystal-2-c,
+#green-light-1,
+//#crystal-1-c,
+#love,
+#kodama,
+#mom,
+#shine,
+#grass,
+#butterfly {
+  opacity: 0;
+}
+.svg {
   width: 100%;
-}
-.logo {
-  width: 80%;
-  max-width: 400px;
-  display: block;
-  margin: 0 auto;
-}
-.appendx {
-  background-color: #000;
-}
-.links {
-  font-size: 3rem;
-  margin: 1rem 0 10rem;
-
-  text-align: center;
-
-  .link {
-    transition: 0.3s all ease-in-out;
-    color: orange;
-    &-out {
-      color: var(--bg);
-    }
-    &:hover {
-      opacity: 0.5;
-    }
-    margin-bottom: 2rem;
-  }
-}
-.social {
-  padding-left: 4rem;
-  margin-bottom: 5rem;
-  display: flex;
-  justify-content: center;
+  height: auto;
 }
 </style>
+

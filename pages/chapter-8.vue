@@ -288,7 +288,7 @@ export default {
           ease: Power4.easeOut
         })
       })
-    }, 1500)
+    }, 1000)
   }
 }
 </script>

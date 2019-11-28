@@ -95,6 +95,13 @@
             height="151"
             :xlink:href="require('@/assets/chapter-2/button.png')"
           />
+          <image
+            v-if="count === 1"
+            id="here"
+            x="700"
+            y="747"
+            :xlink:href="require('@/assets/here-orange.png')"
+          />
           <rect
             @click="read"
             id="button-mask"
@@ -133,6 +140,7 @@ export default {
       gsap
         .timeline({ delay: 0 })
         .fromTo('#stage-2', appear.time, fadeIn.from, fadeIn.to)
+        .fromTo('#here', 0.8, fadeIn.from, fadeIn.to)
 
       gsap.to('#love', 1, {
         repeat: -1,
@@ -196,6 +204,7 @@ export default {
 #book-4,
 #book-3,
 #book-2,
+#here,
 //#book-1,
 #stage-2 {
   opacity: 0;

@@ -97,6 +97,14 @@
           height="1668"
           :xlink:href="require('@/assets/chapter-3/leaf-1.png')"
         />
+
+        <image
+          v-if="leaves === 7"
+          id="here"
+          x="340"
+          y="817"
+          :xlink:href="require('@/assets/here-yellow.png')"
+        />
         <image
           id="s3-butterfly"
           x="0"
@@ -154,6 +162,7 @@ export default {
           opacity: 0
         })
         .fromTo('#kodama', appear.time, fadeIn.from, fadeIn.to)
+        .fromTo('#here', 0.8, fadeIn.from, fadeIn.to)
     }, 1500)
     const cb = () => {
       this.leaves--
@@ -184,6 +193,7 @@ export default {
 #kodama,
 //#crystal,
 #green-light,
+#here,
 //#leaf-8,
 //#leaf-7,
 //#leaf-6,

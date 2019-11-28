@@ -84,6 +84,14 @@
           :xlink:href="require('@/assets/chapter-4/space.png')"
         />
       </g>
+
+      <image
+        id="here"
+        x="526"
+        y="1659"
+        v-if="click === 0"
+        :xlink:href="require('@/assets/here-yellow.png')"
+      />
     </svg>
   </main>
 </template>
@@ -105,6 +113,7 @@ export default {
         .timeline({ delay: 0 })
         .fromTo('#stage-1', appear.time, fadeIn.from, fadeIn.to)
         .fromTo('#chat-bubble-1', appear.time, fadeIn.from, fadeIn.to)
+        .fromTo('#here', 0.8, fadeIn.from, fadeIn.to)
 
       setTimeout(() => {
         gsap.to('#green-light', 0.5, {
@@ -178,6 +187,7 @@ export default {
 #chat-bubble-1,
 #chat-bubble-2,
 #tree,
+#here,
 #chat-crystal,
 #tree-dead,
 #space,

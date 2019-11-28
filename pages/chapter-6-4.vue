@@ -82,6 +82,14 @@
             height="59"
             :xlink:href="require('@/assets/chapter-6/w1.png')"
           />
+
+          <image
+            v-if="count===0"
+            id="here"
+            x="540"
+            y="902"
+            :xlink:href="require('@/assets/here-yellow.png')"
+          />
           <rect
             id="crystal-mask"
             @click="sway"
@@ -129,6 +137,7 @@ export default {
           fadeIn.from,
           fadeIn.to
         )
+        .fromTo('#here', 0.8, fadeIn.from, fadeIn.to)
 
       setTimeout(() => {
         gsap.to('#green-light', 1, {
@@ -212,7 +221,8 @@ export default {
 #w2,
 #w3,
 #w4,
-#next {
+#next,
+#here {
   opacity: 0;
 }
 #crystal-mask {

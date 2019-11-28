@@ -61,6 +61,15 @@
           width="515"
           height="795"
         />
+
+        <image
+          v-if="clickCount === 0"
+          id="here"
+          :xlink:href="require('@/assets/here-yellow.png')"
+          data-name="wood close"
+          x="500"
+          y="800"
+        />
         <rect
           id="wood-close-mask"
           stroke="transparent"
@@ -165,6 +174,7 @@ export default {
         fadeIn.from,
         fadeIn.to
       )
+      .fromTo('#here', 0.8, fadeIn.from, fadeIn.to)
 
     gsap.to('#shadow-data', 1, {
       yoyo: true,
@@ -247,6 +257,7 @@ export default {
 #wood-close,
 #wood-close-shadow,
 #baby,
+#here,
 #star-1,
 #star-2,
 #star-3,

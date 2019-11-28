@@ -1,12 +1,22 @@
 <template>
   <div class="appendix-wrapper">
     <article>
-      最後までやってありがとうございます！ 実は、「ケサリの旅」では
-      <span class="cfe-orange">高レベル放射性廃棄物の処分</span>について話しましたよ！ 緑の結晶は原子力発電に利用された核燃料の廃棄物である高レベル放射線廃棄物の代物であります。 出現した海の底、宇宙、また地下は関連の研究機関が今までの研究で想定していた、その高レベル放射線廃棄物を閉じ込む場所であります。 より詳しいコンテンツは
-      <a
-        class="numo"
-        href="https://www.numo.or.jp/pr-info/pr/video/"
-      >ＮＵＭＯサイト</a>へ！
+      <p>最後までやってありがとうございます！</p>
+
+      <p>
+        実は、「ケサリの旅」では
+        <span class="cfe-orange">高レベル放射性廃棄物の処分</span>について話しましたよ！
+      </p>
+
+      <p>緑の結晶は原子力発電に利用された核燃料の廃棄物である高レベル放射線廃棄物の代物であります。</p>
+
+      <p>出現した海の底、宇宙、また地下は関連の研究機関が今までの研究で想定していた、その高レベル放射線廃棄物を閉じ込む場所であります。</p>
+
+      <p>
+        より詳しいコンテンツは
+        <br />
+        <a class="numo" href="https://www.numo.or.jp/pr-info/pr/video/">ＮＵＭＯサイト</a>へ！
+      </p>
     </article>
 
     <div class="links">
@@ -119,6 +129,9 @@ article {
   line-height: 1.4;
   font-size: 2.2rem;
   color: #ccc;
+  p {
+    margin-bottom: 2rem;
+  }
 }
 .numo {
   color: #03a9f4;

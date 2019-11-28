@@ -61,7 +61,7 @@
         </social-sharing>
       </p>
 
-      <p class="link">
+      <p class="link link-out">
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -114,6 +114,9 @@ main {
   .link {
     transition: 0.3s all ease-in-out;
     color: orange;
+    &-out {
+      color: var(--bg);
+    }
     &:hover {
       opacity: 0.5;
     }

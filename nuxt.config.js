@@ -17,13 +17,13 @@ export default {
       },
       { name: 'og:title', content: 'ケサリの旅' },
       { name: 'og:site_name', content: 'ケサリの旅' },
-      { name: 'og:url', content: 'https://cfe.sakura.ne.jp/w_dhu/' },
+      { name: 'og:url', content: 'https://cfe2019.netlify.app/' },
       {
         name: 'og:description',
         content: process.env.npm_package_description || ''
       },
       { name: 'og:type', content: 'website' },
-      { name: 'og:image', content: 'https://cfe.sakura.ne.jp/w_dhu/ogp.jpg' },
+      { name: 'og:image', content: 'https://cfe2019.netlify.app/ogp.jpg' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'ケサリの旅' },
       { name: 'twitter:creator', content: '@nerd_yue' },

@@ -48,7 +48,7 @@
 
       <p>
         <social-sharing
-          url="https://cfe.sakura.ne.jp/w_dhu/"
+          url="https://cfe2019.netlify.app/"
           title="破壊的な力を持つ緑の結晶を安全な場所に閉じ込めましょう"
           description="破壊的な力を持つ緑の結晶を安全な場所に閉じ込めましょう"
           hashtags="地層処分"
@@ -103,7 +103,7 @@
       </p>
 
       <p class="icon-wrapper">
-        <img class="icon" src="https://cfe.sakura.ne.jp/w_dhu/android-chrome-192x192.png" />
+        <img class="icon" src="https://cfe2019.netlify.app/android-chrome-192x192.png" />
       </p>
     </div>
   </div>

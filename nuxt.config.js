@@ -80,12 +80,13 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    //  '@nuxtjs/eslint-module'
+    //  '@nuxtjs/eslint-module',
+    '@aceforth/nuxt-optimized-images'
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@bazzite/nuxt-optimized-images'],
+  modules: ['@nuxtjs/pwa'],
   optimizedImages: {
     optimizeImages: true
   },
@@ -93,7 +94,7 @@ export default {
    ** Build configuration
    */
   router: {
-    base: process.env.NODE_ENV === 'production' ? '/w_dhu/' : '/'
+    base: '/'
   },
   build: {
     /*
